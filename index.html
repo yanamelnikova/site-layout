@@ -8,15 +8,15 @@
     <title>Site Layout</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
-    <div class="onclick-menu-wrap">
+    <div class="onclick-menu-wrap" id="">
         <div class="onclick-menu">
             <div class="hide-onclick">
-                <button class="hide-onclick-menu">
-                    <img src="./close-cross-in-circular-outlined-interface-button-pngrepo-com.png" alt="close" class="close-image">
+                <button class="hide-onclick-menu" onClick="triggerMenu()">
+                    <img src="./assets/images/close-cross-in-circular-outlined-interface-button-pngrepo-com.png" alt="close" class="close-image">
                 </button>
             </div>
             <button class="onclick-menu-button">home</button>
@@ -40,7 +40,9 @@
                 <button class="nav-button">services</button>
                 <button class="nav-button">contact</button>
                 <div class="menu-bar-wrap">
-                    <button class="menu-bar"><img src="./bars.png" alt="menu-bar" class="hamburger"></button>
+                    <button class="menu-bar" onClick="triggerMenu()">
+                        <img src="./assets/images/bars.png" alt="menu-bar" class="hamburger">
+                    </button>
                 </div>
             </div>
         </div>
