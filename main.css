@@ -122,6 +122,11 @@ body {
   text-transform: uppercase;
   border: none;
 }
+@media screen and (max-width: 690px) {
+  .nav-button-main {
+     font-size: 20px;
+   }
+}
 .nav-bar-center {
   height: 100%;
   width: 30%;
@@ -131,6 +136,8 @@ body {
   width: 50%;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 860px) {
   .nav-bar-left  {
@@ -165,6 +172,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   border: none;
+  padding: 5px;
 }
 @media screen and (max-width: 690px) {
   .nav-button {
@@ -202,10 +210,9 @@ a {
   width: 90%;
   /* height: 300px; */
 
-  background-color: beige;
+  background-color: #f5f5dca1;
   border-radius: 7px;
   border: 1px solid gray;
-  opacity: 0.8;
   /* z-index: -1; */
   overflow: hidden;
 }
@@ -255,6 +262,7 @@ h1 {
   border-radius: 7px;
   font-size: 20px;
   font-weight: bold;
+  opacity: 100%;
 }
 .secondary-banner-block {
   width: 90%;
@@ -373,6 +381,7 @@ h1 {
   font-weight: bold;
   color: white;
   font-size: 20px;
+  border: none;
 }
 .footer-wrap {
   background-color: rgb(97, 96, 96);
