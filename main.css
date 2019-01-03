@@ -1,5 +1,5 @@
 body {
-  background-color: crimson;
+  background-color: rosybrown;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -212,7 +212,6 @@ a {
   /* height: 300px; */
   background-color: #f5f5dca1;
   border-radius: 7px;
-  border: 1px solid gray;
   /* z-index: -1; */
   overflow: hidden;
 }
@@ -264,6 +263,7 @@ h1 {
   font-size: 20px;
   font-weight: bold;
   opacity: 100%;
+  cursor: pointer;
 }
 .secondary-banner-block {
   width: 90%;
@@ -335,7 +335,6 @@ h1 {
   background-color: #f5f5dca1;
   border-radius: 7px;
   margin: 5px;
-  border: 1px solid gray;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -365,7 +364,6 @@ h1 {
 }
 .secondary-text-wrap {
   width: 100%;
-  border: 1px solid gray;
 }
 .secondary-text {
   font-size: 14px;
@@ -384,6 +382,9 @@ h1 {
   color: white;
   font-size: 20px;
   border: none;
+  cursor: pointer;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 .footer-wrap {
   background-color: rgb(97, 96, 96);
