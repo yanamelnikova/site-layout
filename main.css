@@ -121,6 +121,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 690px) {
   .nav-button-main {
@@ -173,6 +174,7 @@ body {
   text-transform: uppercase;
   border: none;
   padding: 5px;
+  cursor: pointer;
 }
 @media screen and (max-width: 690px) {
   .nav-button {
@@ -264,6 +266,8 @@ h1 {
   font-weight: bold;
   opacity: 100%;
   cursor: pointer;
+  text-align: center;
+  padding: 5px;
 }
 .secondary-banner-block {
   width: 90%;
