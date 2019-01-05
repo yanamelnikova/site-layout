@@ -8,50 +8,53 @@
     <title>Site Layout</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="homepage.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="elements.css" />
     <script src="index.js"></script>
 </head>
 
 <body>
-    <div class="onclick-menu-wrap" id="">
-        <div class="onclick-menu">
-            <div class="hide-onclick">
-                <button class="hide-onclick-menu" onClick="triggerMenu()">
+    <div class="onclick-menu-wrap" id="mobile-nav-element">
+        <div class="onclick-menu" id="mobile-nav-element">
+            <div class="hide-onclick" id="mobile-nav-element">
+                <button class="hide-onclick-menu" id="mobile-nav-element" onClick="triggerMenu()">
                     <img src="./assets/images/close-cross-in-circular-outlined-interface-button-pngrepo-com.png" alt="close"
-                        class="close-image">
+                        class="close-image" id="mobile-nav-element">
                 </button>
             </div>
-            <a href="./index.html"> <button class="onclick-menu-button" >home</button></a>
-            <button class="onclick-menu-button">about</button>
-            <button class="onclick-menu-button">services</button>
-            <a href="./contacts.html"> <button class="onclick-menu-button"> contacts</button></a>
+            <a href="./index.html"><button class="onclick-menu-button" id="mobile-nav-element">home</button></a>
+            <button class="onclick-menu-button" id="mobile-nav-element">about</button>
+            <button class="onclick-menu-button" id="mobile-nav-element">services</button>
+            <a href="./contacts.html"><button class="onclick-menu-button" id="mobile-nav-element">contacts</button></a>
 
         </div>
     </div>
     <div class="navigation-bar-wrap">
-        <div class="navigation-bar">
-            <div class="nav-bar-left">
-                <button class="nav-button-main">
-                    <a href="https://blackrockdigital.github.io/startbootstrap-heroic-features/#" target="_blank">See
-                        Prototype</a>
-                </button>
-            </div>
-            <div class="nav-bar-center"></div>
-            <div class="nav-bar-right">
-                <a href="./index.html"> <button class="nav-button">home</button> </a>
-                <button class="nav-button">about</button>
-                <button class="nav-button">services</button>
-                <button class="nav-button"><a href="./contacts.html">contact</a></button>
-                <div class="menu-bar-wrap">
-                    <button class="menu-bar" onClick="triggerMenu()">
-                        <img src="./assets/images/bars.png" alt="menu-bar" class="hamburger">
+        <div class="navigation-bar" id="nav-element">
+            <div class="nav-bar-left"id="nav-element">
+                <a href="https://blackrockdigital.github.io/startbootstrap-heroic-features/#" target="_blank">
+                    <button class="nav-button-main" id="nav-element">
+                        See Prototype
                     </button>
-                </div>
+                </a>
+            </div>
+            <div class="nav-bar-center"id="nav-element"></div>
+            <div class="nav-bar-right" id="nav-element">
+                <a href="./index.html"> <button class="nav-button" id="nav-element">home</button> </a>
+                <button class="nav-button" id="nav-element">about</button>
+                <button class="nav-button" id="nav-element">services</button>
+                <a href="./contacts.html"><button class="nav-button" id="nav-element">contact</button></a>
+                <div class="menu-bar-wrap">
+                        <button class="menu-bar" onClick="triggerMenu()" id="nav-element">
+                            <img src="./assets/images/bars.png" alt="menu-bar" class="hamburger">
+                        </button>
+                    </div>
             </div>
         </div>
     </div>
     <div class="page-content-wrap">
-        <div class="first-banner">
-            <div class="first-heading-wrap">
+        <div class="first-banner" id="banner">
+            <div class="first-heading-wrap" id="heading">
                 <h1>hello world!</h2>
             </div>
             <p class="first-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam,
@@ -64,13 +67,17 @@
                 eligendi, in quo sunt possimus non incidunt odit vero aliquid similique
                 quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
             <div class="first-button-wrap">
-                <a href="./press-here.html"> <button class="first-button">PRESS HERE</button> </a>
+                <a href="./press-here.html">
+                    <button class="first-button" id="body-button">
+                        PRESS HERE
+                    </button>
+                </a>
             </div>
         </div>
         <div class="secondary-banner-block">
             <div class="sec-banner12">
-                <div class="secondary-banner">
-                    <div class="secondary-heading-wrap">
+                <div class="secondary-banner" id="banner">
+                    <div class="secondary-heading-wrap" id="heading">
                         <h2 class="secondary-heading">hello world!</h2>
                     </div>
                     <div class="secondary-text-wrap">
@@ -80,11 +87,11 @@
                             quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
                     </div>
                     <div class="secondary-button-wrap">
-                        <a href="./press-here.html"> <button class="secondary-button">PRESS HERE</button></a>
+                        <a href="./press-here.html"><button class="secondary-button" id="body-button">PRESS HERE</button></a>
                     </div>
                 </div>
-                <div class="secondary-banner">
-                    <div class="secondary-heading-wrap">
+                <div class="secondary-banner" id="banner">
+                    <div class="secondary-heading-wrap" id="heading"> 
                         <h2 class="secondary-heading">hello world!</h2>
                     </div>
                     <div class="secondary-text-wrap">
@@ -94,13 +101,13 @@
                             quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
                     </div>
                     <div class="secondary-button-wrap">
-                        <a href="./press-here.html"> <button class="secondary-button">PRESS HERE</button></a>
+                        <a href="./press-here.html"><button class="secondary-button" id="body-button">PRESS HERE</button></a>
                     </div>
                 </div>
             </div>
             <div class="sec-banner34">
-                <div class="secondary-banner">
-                    <div class="secondary-heading-wrap">
+                <div class="secondary-banner" id="banner">
+                    <div class="secondary-heading-wrap" id="heading">
                         <h2 class="secondary-heading">hello world!</h2>
                     </div>
                     <div class="secondary-text-wrap">
@@ -110,11 +117,11 @@
                             quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
                     </div>
                     <div class="secondary-button-wrap">
-                       <a href="./press-here.html"> <button class="secondary-button">PRESS HERE</button></a>
+                        <a href="./press-here.html"><button class="secondary-button" id="body-button">PRESS HERE</button></a>
                     </div>
                 </div>
-                <div class="secondary-banner">
-                    <div class="secondary-heading-wrap">
+                <div class="secondary-banner" id="banner">
+                    <div class="secondary-heading-wrap" id="heading">
                         <h2 class="secondary-heading">hello world!</h2>
                     </div>
                     <div class="secondary-text-wrap">
@@ -124,7 +131,7 @@
                             quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
                     </div>
                     <div class="secondary-button-wrap">
-                        <a href="./press-here.html"><button class="secondary-button">PRESS HERE</button></a> 
+                        <a href="./press-here.html"><button class="secondary-button" id="body-button">PRESS HERE</button></a>
                     </div>
                 </div>
             </div>

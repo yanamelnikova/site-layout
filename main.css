@@ -1,5 +1,5 @@
 body {
-  background-color: rosybrown;
+  background-color: white;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,23 +13,37 @@ body {
   background-image: url("./assets/images/background.jpg");
   background-size: cover;
 }
+.menu-bar-wrap {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+    }
+  @media screen and (min-width: 691px) {
+    .menu-bar-wrap {
+       display: none;
+     }
+  }
+    .hamburger {
+    height: 100%;
+    width: 70px;
+  }
 .onclick-menu-wrap {
   width: 100%;
+  max-width: 350px;
+  right: 0;
   display: none;
   justify-content: flex-end;
   align-items: flex-end;
   position: fixed;
   top: 0;
-  z-index: 9;
 }
 .onclick-menu {
-  background-color: beige;
-  opacity: 0.9;
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 400px;
-  z-index: 4;
+  max-width: 450px;
   right: 0px;
   justify-content: center;
   align-items: center;
@@ -44,29 +58,19 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  opacity: 0.8;
   width: 100%;
-  height: 70px;
+  height: 60px;
   padding: 12px;
+  margin: 12px;
   box-sizing: border-box;
 }
 .hide-onclick-menu {
   height: 50px;
   width: 50px;
-  border: none;
-  background-color: inherit;
   padding: 0;
 }
 .onclick-menu-button{
-  background: inherit;
-  text-transform: uppercase;
   height: 50px;
-  font-size: 25px;
-  font-weight: bold;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  opacity: 0.8;
-  border: none;
-  color: black;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -76,15 +80,23 @@ body {
   height: 100%;
   width: 100%;
 }
+#mobile-nav-element {
+  border: none;
+  background-color: beige;
+  opacity: 0.9;
+  z-index: 9;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .navigation-bar-wrap {
   position: fixed;
   top: 0px;
   height: 60px;
   width: 100%;
-  color: beige;
-  font-size: 20px;
-  z-index: 2;
-}
+  z-index: 5;
+  }
 @media screen and (max-width: 998px) {
   .navigation-bar-wrap {
     height: 70px;
@@ -97,49 +109,29 @@ body {
 }
 .navigation-bar {
   top: 0px;
-  height: 100%;
   width: 100%;
-  background-color: black;
   display: flex;
   flex-direction: row;
-  opacity: 0.7;
-  z-index: 2;
-}
+  }
 .nav-bar-left {
-  height: 100%;
   width: 20%;
-  text-align: center;
-}
+  }
 .nav-button-main {
-  height: 100%;
   width: 100%;
-  background-color: inherit;
-  color: beige;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-}
+    }
 @media screen and (max-width: 690px) {
   .nav-button-main {
      font-size: 20px;
    }
 }
 .nav-bar-center {
-  height: 100%;
   width: 30%;
 }
 .nav-bar-right {
-  height: 100%;
   width: 50%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
+  }
 @media screen and (max-width: 860px) {
   .nav-bar-left  {
     width: 20%;
@@ -163,241 +155,25 @@ body {
     }
 }
 .nav-button {
-  height: 100%;
   width: 100%;
-  background-color: inherit;
-  color: beige;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
   padding: 5px;
-  cursor: pointer;
-}
+  }
 @media screen and (max-width: 690px) {
   .nav-button {
      display: none;
    }
 }
-.menu-bar-wrap {
-height: 100%;
-width: 100%;
-display: flex;
-align-items: flex-end;
-justify-content: flex-end;
-border: none;
-background: inherit;
-}
-@media screen and (min-width: 691px) {
-  .menu-bar-wrap {
-     display: none;
-   }
-}
-.menu-bar {
-  background: inherit;
+#nav-element {
+  color: beige;
+  background-color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
   border: none;
-}
-.hamburger {
+  cursor: pointer;
+  opacity: 0.7;
+  text-align: center;
   height: 100%;
-  width: 70px;
-  background: inherit;
-}
-a {
-  color: beige;
-  text-decoration: none;
-}
-.first-banner {
-  width: 90%;
-  max-width: 1000px;
-  /* height: 300px; */
-  background-color: #f5f5dca1;
-  border-radius: 7px;
-  /* z-index: -1; */
-  overflow: hidden;
-}
-.first-heading-wrap {
-    /* height: 25%; */
-    width: 100%;
-    background-color: gray;
-    opacity: 0.8;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    position: relative;
-    box-sizing: border-box;
-}
-h1 {
-
-  width: 100%;
-  background-color: gray;
-  color: beige;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0px;
-}
-.first-text {
-  font-size: 17px;
-  text-align: center;
-  margin: 10px;
-}
-.first-button-wrap {
-  width: 100%;
-  height: 18%;
-  align-items: flex-end;
-  justify-content: flex-end;
-  /* right: 40px; */
-  display: flex;
-  /* flex-direction: row-reverse; */
-  padding: 25px;
-  box-sizing: border-box;
-}
-.first-button {
-  width: 25%;
-  background-color: burlywood;
-  height: 50px;
-  width: 80px;
-  border: 0;
-  color: white;
-  border-radius: 7px;
-  font-size: 20px;
-  font-weight: bold;
-  opacity: 100%;
-  cursor: pointer;
-  text-align: center;
-  padding: 5px;
-}
-.secondary-banner-block {
-  width: 90%;
-  max-width: 1000px;
-  /* height: 200px; */
-  border-radius: 7px;
-  display: flex;
-  flex-direction: row;
-  margin: 50px;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-}
-/* @media screen and (max-width: 1172px) {
-    .secondary-banner-block  {
-       height: 240px;
-     }
-}
-@media screen and (max-width: 979px) {
-    .secondary-banner-block  {
-       height: 280px;
-     }
-} */
-@media screen and (max-width: 868px) {
-    .secondary-banner-block  {
-       flex-direction: column;
-       /* height: 600px; */
-     }
-}
-/* @media screen and (max-width: 401px) {
-  .secondary-banner-block {
-    height: 800px;
-  }
-}
-@media screen and (max-width: 299px) {
-  .secondary-banner-block {
-    height: 1000px;
-  }
-}
-@media screen and (max-width: 231px) {
-  .secondary-banner-block {
-    height: 1200px;
-  }
-} */
-.sec-banner12{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-@media screen and (max-width: 401px) {
-  .sec-banner12 {
-    flex-direction: column;
-    width: 100%;
-  }
-}
-.sec-banner34{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-@media screen and (max-width: 401px) {
-  .sec-banner34 {
-    flex-direction: column;
-    width: 100%;
-  }
-}
-.secondary-banner {
-  width: 50%;
-  background-color: #f5f5dca1;
-  border-radius: 7px;
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 401px) {
-  .secondary-banner {
-    width: 100%;
-  }
-}
-.secondary-heading-wrap {
-  width: 100%;
-  background-color: gray;
-  opacity: 0.8;
-}
-.secondary-heading {
-  width: 100%;
-  color: beige;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 5px;
-}
-@media screen and (max-width: 417px) {
-  .secondary-heading  {
-     font-size: 120%;
-  }
-}
-.secondary-text-wrap {
-  width: 100%;
-}
-.secondary-text {
-  font-size: 14px;
-  text-align: center;
-  margin: 5px;
-}
-.secondary-button-wrap {
-  width: 100%;
-}
-.secondary-button {
-  height: 40px;
-  width: 100%;
-  border-radius: 7px;
-  background-color: burlywood;
-  font-weight: bold;
-  color: white;
-  font-size: 20px;
-  border: none;
-  cursor: pointer;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-}
-.footer-wrap {
-  background-color: rgb(97, 96, 96);
-  opacity: 0.8;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
 }
 .page-content-wrap{
   margin: 0;
@@ -408,4 +184,13 @@ h1 {
   align-items: center;
   flex-direction: column;
   display: flex;
+}
+ .footer-wrap {
+  background-color: rgb(97, 96, 96);
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
 }

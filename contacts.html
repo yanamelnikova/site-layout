@@ -8,68 +8,61 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="contacts.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="elements.css" />
     <script src="index.js"></script>
   </head>
 
   <body>
-    <div class="onclick-menu-wrap" id="">
-      <div class="onclick-menu">
-        <div class="hide-onclick">
-          <button class="hide-onclick-menu" onClick="triggerMenu()">
-            <img
-              src="./assets/images/close-cross-in-circular-outlined-interface-button-pngrepo-com.png"
-              alt="close"
-              class="close-image"
-            />
-          </button>
-        </div>
-            <a href="./index.html"> <button class="onclick-menu-button">home</button></a>
-            <button class="onclick-menu-button">about</button>
-            <button class="onclick-menu-button">services</button>
-            <a href="./contacts.html"> <button class="onclick-menu-button"> contacts</button></a>
-      </div>
-    </div>
-    <div class="navigation-bar-wrap">
-      <div class="navigation-bar">
-        <div class="nav-bar-left">
-          <button class="nav-button-main">
-            <a
-              href="https://blackrockdigital.github.io/startbootstrap-heroic-features/#"
-              target="_blank"
-              >See Prototype</a
-            >
-          </button>
-        </div>
-        <div class="nav-bar-center"></div>
-        <div class="nav-bar-right">
-            <a href="./index.html"> <button class="nav-button">home</button> </a>
-            <button class="nav-button">about</button>
-            <button class="nav-button">services</button>
-            <button class="nav-button"><a href="./contacts.html">contact</a></button>
-          <div class="menu-bar-wrap">
-            <button class="menu-bar" onClick="triggerMenu()">
-              <img
-                src="./assets/images/bars.png"
-                alt="menu-bar"
-                class="hamburger"
-              />
-            </button>
+      <div class="onclick-menu-wrap" id="mobile-nav-element">
+          <div class="onclick-menu" id="mobile-nav-element">
+              <div class="hide-onclick" id="mobile-nav-element">
+                  <button class="hide-onclick-menu" id="mobile-nav-element" onClick="triggerMenu()">
+                      <img src="./assets/images/close-cross-in-circular-outlined-interface-button-pngrepo-com.png" alt="close"
+                          class="close-image" id="mobile-nav-element">
+                  </button>
+              </div>
+              <a href="./index.html"><button class="onclick-menu-button" id="mobile-nav-element">home</button></a>
+              <button class="onclick-menu-button" id="mobile-nav-element">about</button>
+              <button class="onclick-menu-button" id="mobile-nav-element">services</button>
+              <a href="./contacts.html"><button class="onclick-menu-button" id="mobile-nav-element">contacts</button></a>
+  
           </div>
-        </div>
       </div>
+    <div class="navigation-bar-wrap">
+        <div class="navigation-bar" id="nav-element">
+            <div class="nav-bar-left"id="nav-element">
+                <a href="https://blackrockdigital.github.io/startbootstrap-heroic-features/#" target="_blank">
+                    <button class="nav-button-main" id="nav-element">
+                        See Prototype
+                    </button>
+                </a>
+            </div>
+            <div class="nav-bar-center"id="nav-element"></div>
+            <div class="nav-bar-right" id="nav-element">
+                <a href="./index.html"> <button class="nav-button" id="nav-element">home</button> </a>
+                <button class="nav-button" id="nav-element">about</button>
+                <button class="nav-button" id="nav-element">services</button>
+                <a href="./contacts.html"><button class="nav-button" id="nav-element">contact</button></a>
+                <div class="menu-bar-wrap">
+                    <button class="menu-bar" onClick="triggerMenu()" id="nav-element">
+                        <img src="./assets/images/bars.png" alt="menu-bar" class="hamburger">
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="contacts-content-wrap">
-      <div class="message-block-wrap">
-        <div class="heading-wrap">
+      <div class="message-block-wrap"  id="banner">
+        <div class="heading-wrap"  id="heading">
           <h2 class="heading-h2">Please, contact us:</h2>
           <h3 class="heading-h3">Please, contact us:</h3>
         </div>
         <textarea placeholder="Pls, type your message here" name="message" id="message" cols="30" rows="10"></textarea
         >
-        <button class="send-message">Send message</button>
+        <button class="send-message" id="body-button">Send message</button>
       </div>
-      <div class="also-follow-us-wrap">
-        <div class="also-follow-us-text-wrap">
+      <div class="also-follow-us-wrap"  id="banner">
+        <div class="also-follow-us-text-wrap"  id="heading">
           <h3 class="also-follow-us-text-h3">Also follow us at:</h3>
           <h4 class="also-follow-us-text-h4">Also follow us at:</h4>
         </div>
@@ -88,7 +81,7 @@
           /></a>
           <a href="https://www.instagram.com/ianamelnikova/" target="_blank"
             ><img
-              src="./assets/images/insta.png"
+              src="./assets/images/insta.svg"
               alt="facebook"
               class="follow-icon"
           /></a>
